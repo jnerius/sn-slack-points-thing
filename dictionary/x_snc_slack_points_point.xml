@@ -8,5 +8,8 @@
         <index name="index">
             <element name="source_event"/>
         </index>
+        <index name="index2">
+            <element name="target"/>
+        </index>
     </element>
 </database>
