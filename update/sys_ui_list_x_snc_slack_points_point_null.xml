@@ -4,47 +4,62 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>giver</element>
-            <list_id display_value="x_snc_slack_points_point" element="NULL" name="x_snc_slack_points_point" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">15133f5813b043009718b9b76144b0a1</list_id>
+            <list_id display_value="x_snc_slack_points_point" element="NULL" name="x_snc_slack_points_point" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">433f3897db82030005b1dec0cf96195f</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>josh.nerius</sys_created_by>
-            <sys_created_on>2017-08-21 21:21:28</sys_created_on>
-            <sys_id>d5137f5813b043009718b9b76144b0e5</sys_id>
+            <sys_created_by>jnerius</sys_created_by>
+            <sys_created_on>2017-10-31 19:15:58</sys_created_on>
+            <sys_id>4f3f3897db82030005b1dec0cf96195f</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>josh.nerius</sys_updated_by>
-            <sys_updated_on>2017-08-21 21:21:28</sys_updated_on>
+            <sys_updated_by>jnerius</sys_updated_by>
+            <sys_updated_on>2017-10-31 19:15:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>target</element>
-            <list_id display_value="x_snc_slack_points_point" element="NULL" name="x_snc_slack_points_point" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">15133f5813b043009718b9b76144b0a1</list_id>
+            <list_id display_value="x_snc_slack_points_point" element="NULL" name="x_snc_slack_points_point" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">433f3897db82030005b1dec0cf96195f</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>josh.nerius</sys_created_by>
-            <sys_created_on>2017-08-21 21:21:28</sys_created_on>
-            <sys_id>dd137f5813b043009718b9b76144b0e5</sys_id>
+            <sys_created_by>jnerius</sys_created_by>
+            <sys_created_on>2017-10-31 19:15:58</sys_created_on>
+            <sys_id>073f3897db82030005b1dec0cf961960</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>josh.nerius</sys_updated_by>
-            <sys_updated_on>2017-08-21 21:21:28</sys_updated_on>
+            <sys_updated_by>jnerius</sys_updated_by>
+            <sys_updated_on>2017-10-31 19:15:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>text</element>
-            <list_id display_value="x_snc_slack_points_point" element="NULL" name="x_snc_slack_points_point" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">15133f5813b043009718b9b76144b0a1</list_id>
+            <element>channel</element>
+            <list_id display_value="x_snc_slack_points_point" element="NULL" name="x_snc_slack_points_point" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">433f3897db82030005b1dec0cf96195f</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>josh.nerius</sys_created_by>
-            <sys_created_on>2017-08-21 21:21:28</sys_created_on>
-            <sys_id>51137f5813b043009718b9b76144b0e6</sys_id>
+            <sys_created_by>jnerius</sys_created_by>
+            <sys_created_on>2017-10-31 19:15:58</sys_created_on>
+            <sys_id>873f3897db82030005b1dec0cf961960</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>josh.nerius</sys_updated_by>
-            <sys_updated_on>2017-08-21 21:21:28</sys_updated_on>
+            <sys_updated_by>jnerius</sys_updated_by>
+            <sys_updated_on>2017-10-31 19:15:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>text</element>
+            <list_id display_value="x_snc_slack_points_point" element="NULL" name="x_snc_slack_points_point" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">433f3897db82030005b1dec0cf96195f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jnerius</sys_created_by>
+            <sys_created_on>2017-10-31 19:15:58</sys_created_on>
+            <sys_id>0b3f3897db82030005b1dec0cf961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jnerius</sys_updated_by>
+            <sys_updated_on>2017-10-31 19:15:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
