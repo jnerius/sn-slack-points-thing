@@ -38,7 +38,19 @@
 		return; 
 	}
 	
-	var matches = payloadObject.event.text.match(/\s?\@?(\S+)\s?\+\+/g); 
+	// removes text in ``` followed by ```
+	// removes text in ` followed by `
+	var plusplusInCodeRegex = /((\`\`\`)|(\`))((.*|\s*))(.*)(\s?\@?(\S+)\s?\+\+)((.*|\s*))((\`\`\`)|(\`))/gmi;
+	// so a message of 
+	// ``` var i=0;i<10;i++ ``` `j++` test++
+	// becomes 
+	// test++
+	var message = payloadObject.event.text;
+	message = message.replace(plusplusInCodeRegex, '');
+	
+	
+	var matches = message.match(/\s?\@?(\S+)\s?\+\+/g); 
+	
 	
 	matches.forEach(function (t) {
 		var thing = t.replace('++', ''); 
@@ -97,15 +109,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f79200dc13444f009718b9b76144b037</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>Process Points</sys_name>
         <sys_overrides/>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_script_f79200dc13444f009718b9b76144b037</sys_update_name>
-        <sys_updated_by>tgbates</sys_updated_by>
-        <sys_updated_on>2017-10-20 22:28:54</sys_updated_on>
+        <sys_updated_by>jace.benson@gmail.com</sys_updated_by>
+        <sys_updated_on>2017-10-31 13:19:00</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
