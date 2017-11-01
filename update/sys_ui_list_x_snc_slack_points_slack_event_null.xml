@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_slack_points_slack_event" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>payload</element>
+            <list_id display_value="x_snc_slack_points_slack_event" element="NULL" name="x_snc_slack_points_slack_event" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a0fb0e1bdb020300dc6f7d9ebf961937</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>kcimpulse</sys_created_by>
+            <sys_created_on>2017-11-01 00:51:06</sys_created_on>
+            <sys_id>a4fb0e1bdb020300dc6f7d9ebf961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kcimpulse</sys_updated_by>
+            <sys_updated_on>2017-11-01 00:51:06</sys_updated_on>
+        </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element/>
