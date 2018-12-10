@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>My Points</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+
+	var responseObj = {};
+	responseObj.attachments = [];
+	responseObj.response_type = 'in_channel'; //in_channel or ephemeral
+	
+	var reqHeaders = request.headers;	
+	var reqQuery = request.queryParams;
+	
+	var slackID = request.queryParams.user_id[0];
+	var slackParam = request.queryParams.text[0];
+	var slackCmd = request.queryParams.command[0];
+	
+	//gs.info('SRAPI reqQuery:'+JSON.stringify(reqQuery,null,4)+' type:'+typeof reqQuery);
+	gs.info('SRAPI slackParam:'+slackParam+' type:'+typeof slackParam);
+	
+	var userPoints = new GlideRecord('x_snc_slack_points_slack_user');
+	if (!slackParam){
+		userPoints.addEncodedQuery('user_idLIKE'+slackID);
+	}else{
+		
+		if (slackParam.charAt(0) === '@'){
+			var grOR = userPoints.addQuery('user_id',slackParam);
+			
+			var slackParamTrim = slackParam.replace('@','');
+  		
+			grOR.addOrCondition('user_name', slackParamTrim);
+			
+		}else{
+			
+			userPoints.addQuery('user_id',slackParam);
+		}
+		
+	}
+	
+	userPoints.query();
+	if(userPoints.next()){
+		var pointQty = userPoints.points;
+		if (!slackParam){
+			responseObj.text = 'You have '+pointQty+' points.';
+		}else{
+			responseObj.text = slackParam + ' has '+pointQty+' points.';
+		}
+		var totalPlayers = new GlideRecord('x_snc_slack_points_slack_user');
+		totalPlayers.query();
+		var playerCount = totalPlayers.getRowCount();
+		
+		var userRank = new GlideRecord('x_snc_slack_points_slack_user');
+		userRank.addQuery('points', '>', pointQty);
+		userRank.query();
+		var othersAhead = userRank.getRowCount();
+		var myRank = othersAhead + 1;
+		//gs.info('othersAhead:'+othersAhead + ' type:'+typeof othersAhead);
+		
+		var attachmentText = {};
+		attachmentText.text = 'Rank is approximately: '+myRank+ ' of '+ playerCount + ' players.';
+		responseObj.attachments.push(attachmentText);
+		
+		
+	}else{
+		if (!slackParam){
+			responseObj.text = 'You have no points, yet.';
+		}else{
+			responseObj.text = slackParam + ' has no points, yet.';
+		}
+	}
+
+	
+	response.setContentType('application/json');
+	response.setStatus(200);
+	var writer = response.getStreamWriter();
+
+	writer.writeString(JSON.stringify(responseObj));
+
+	
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_slack_points/handle_slack_events/mypoints</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/mypoints</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>j4rodm</sys_created_by>
+        <sys_created_on>2018-10-15 17:29:59</sys_created_on>
+        <sys_id>09b97daf4f41ab0023162b8ca310c7f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Points</sys_name>
+        <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
+        <sys_update_name>sys_ws_operation_09b97daf4f41ab0023162b8ca310c7f2</sys_update_name>
+        <sys_updated_by>j4rodm</sys_updated_by>
+        <sys_updated_on>2018-10-15 17:29:59</sys_updated_on>
+        <web_service_definition display_value="Handle Slack Events">ad8db7c813444f009718b9b76144b05d</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
