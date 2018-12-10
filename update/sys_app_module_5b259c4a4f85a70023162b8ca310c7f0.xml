@@ -9,33 +9,33 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>DIRECT</link_type>
         <map_page/>
-        <mobile_title>Slack Points</mobile_title>
+        <mobile_title>Properties</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_snc_slack_points_point</name>
-        <order/>
+        <name/>
+        <order>420</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>system_properties_ui.do?sysparm_title=Managing PointsThing&amp;sysparm_category=PointsThing Configuration</query>
         <report/>
-        <roles>x_snc_slack_points.slack_point_user</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
-        <sys_created_by>josh.nerius</sys_created_by>
-        <sys_created_on>2017-08-21 21:20:16</sys_created_on>
+        <sys_created_by>j4rodm</sys_created_by>
+        <sys_created_on>2018-10-10 18:19:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>bfc2f75813b043009718b9b76144b0ba</sys_id>
+        <sys_id>5b259c4a4f85a70023162b8ca310c7f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Slack Points</sys_name>
+        <sys_name>Properties</sys_name>
         <sys_overrides/>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
-        <sys_update_name>sys_app_module_bfc2f75813b043009718b9b76144b0ba</sys_update_name>
-        <sys_updated_by>josh.nerius</sys_updated_by>
-        <sys_updated_on>2017-08-21 21:20:16</sys_updated_on>
+        <sys_update_name>sys_app_module_5b259c4a4f85a70023162b8ca310c7f0</sys_update_name>
+        <sys_updated_by>j4rodm</sys_updated_by>
+        <sys_updated_on>2018-10-10 18:19:55</sys_updated_on>
         <timeline_page/>
-        <title>Slack Points</title>
+        <title>Properties</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
