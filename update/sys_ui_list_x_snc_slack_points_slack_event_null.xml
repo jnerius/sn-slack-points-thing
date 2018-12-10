@@ -3,17 +3,17 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>payload</element>
-            <list_id display_value="x_snc_slack_points_slack_event" element="NULL" name="x_snc_slack_points_slack_event" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9a59cea9dbde230064dcf5861d96198b</list_id>
+            <list_id display_value="x_snc_slack_points_slack_event" element="NULL" name="x_snc_slack_points_slack_event" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">31da8fed13d62f009718b9b76144b005</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-12-10 16:48:24</sys_created_on>
-            <sys_id>5259cea9dbde230064dcf5861d96198c</sys_id>
+            <sys_created_by>andrew.barnes</sys_created_by>
+            <sys_created_on>2018-12-10 21:34:32</sys_created_on>
+            <sys_id>39da8fed13d62f009718b9b76144b005</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-12-10 16:48:24</sys_updated_on>
+            <sys_updated_by>andrew.barnes</sys_updated_by>
+            <sys_updated_on>2018-12-10 21:34:32</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -28,6 +28,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>josh.nerius</sys_created_by>
             <sys_created_on>2017-07-14 21:00:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c8e1809c13444f009718b9b76144b0f7</sys_id>
@@ -35,11 +36,12 @@
             <sys_name>x_snc_slack_points_slack_event</sys_name>
             <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
             <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
             <sys_update_name>sys_ui_list_x_snc_slack_points_slack_event_null</sys_update_name>
             <sys_updated_by>josh.nerius</sys_updated_by>
             <sys_updated_on>2017-07-14 21:00:31</sys_updated_on>
-            <sys_user display_value="">6e04449313a212009718b9b76144b06b</sys_user>
+            <sys_user display_value="josh.nerius@servicenow.com">6e04449313a212009718b9b76144b06b</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>
