@@ -3,7 +3,6 @@
         <active>true</active>
         <can_edit_in_studio>false</can_edit_in_studio>
         <enforce_license>log</enforce_license>
-        <guided_setup_guid/>
         <js_level>helsinki_es5</js_level>
         <licensable>true</licensable>
         <license_category/>
@@ -25,14 +24,14 @@
         <sys_created_by>josh.nerius</sys_created_by>
         <sys_created_on>2017-07-14 20:41:05</sys_created_on>
         <sys_id>4f6df3c813444f009718b9b76144b02c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>jnerius</sys_updated_by>
-        <sys_updated_on>2017-11-08 23:20:44</sys_updated_on>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>ajb</sys_updated_by>
+        <sys_updated_on>2019-04-16 01:18:43</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.4</version>
+        <version>1.0.5</version>
     </sys_app>
 </record_update>
