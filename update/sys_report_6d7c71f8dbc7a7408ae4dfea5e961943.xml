@@ -4,7 +4,7 @@
         <aggregate>COUNT</aggregate>
         <aggregation_source/>
         <allow_data_label_overlap>false</allow_data_label_overlap>
-        <apply_alias>false</apply_alias>
+        <apply_alias>true</apply_alias>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -31,7 +31,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="">18ca95f3dbe02700b3b8f3c61d961997</created_by_user>
+        <created_by_user display_value="Andrew Barnes - admin">18ca95f3dbe02700b3b8f3c61d961997</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config/>
@@ -46,7 +46,10 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>reimbursement_requested</field>
         <field_list>number,short_description,state,reimbursement_amount,event,event.group</field_list>
-        <filter table="x_snc_dev_meet_reimbursement">event.dateONLast quarter@javascript:gs.beginningOfLastQuarter()@javascript:gs.endOfLastQuarter()^reimbursement_amount!=javascript:global.getCurrencyFilter('x_snc_dev_meet_reimbursement','reimbursement_amount', 'USD;0')^ORreimbursement_amount=NULL</filter>
+        <filter table="x_snc_dev_meet_reimbursement">event.dateONLast quarter@javascript:gs.beginningOfLastQuarter()@javascript:gs.endOfLastQuarter()^reimbursement_amount!=javascript:global.getCurrencyFilter('x_snc_dev_meet_reimbursement','reimbursement_amount', 'USD;0')^ORreimbursement_amount=NULL<item endquery="false" field="event.date" goto="false" newquery="false" operator="ON" or="false" value="Last quarter@javascript:gs.beginningOfLastQuarter()@javascript:gs.endOfLastQuarter()"/>
+            <item endquery="false" field="reimbursement_amount" goto="false" newquery="false" operator="!=" or="false" value="javascript:global.getCurrencyFilter('x_snc_dev_meet_reimbursement','reimbursement_amount', 'USD;0')"/>
+            <item endquery="false" field="reimbursement_amount" goto="false" newquery="false" operator="=" or="true" value="NULL"/>
+        </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -76,7 +79,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles/>
+        <roles>snc_internal</roles>
         <row/>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -104,14 +107,14 @@
         <sys_created_by>ajb</sys_created_by>
         <sys_created_on>2019-01-14 14:43:44</sys_created_on>
         <sys_id>6d7c71f8dbc7a7408ae4dfea5e961943</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Last Quarter Reimbursements</sys_name>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_report_6d7c71f8dbc7a7408ae4dfea5e961943</sys_update_name>
-        <sys_updated_by>ajb</sys_updated_by>
-        <sys_updated_on>2019-01-14 14:57:58</sys_updated_on>
+        <sys_updated_by>brad.tilton@snc</sys_updated_by>
+        <sys_updated_on>2020-11-19 14:11:31</sys_updated_on>
         <table>x_snc_dev_meet_reimbursement</table>
         <title>Last Quarter Reimbursements</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

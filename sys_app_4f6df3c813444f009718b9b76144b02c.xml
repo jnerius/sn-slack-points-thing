@@ -28,15 +28,15 @@
         <sys_created_by>josh.nerius</sys_created_by>
         <sys_created_on>2017-07-14 20:41:05</sys_created_on>
         <sys_id>4f6df3c813444f009718b9b76144b02c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_updated_by>andrew.barnes@snc</sys_updated_by>
-        <sys_updated_on>2020-02-18 22:27:20</sys_updated_on>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>earl.duque</sys_updated_by>
+        <sys_updated_on>2020-12-18 22:28:44</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.5</version>
+        <version>1.1.0</version>
     </sys_app>
 </record_update>

@@ -33,13 +33,13 @@
         <image_width>550</image_width>
         <size_bytes>33924</size_bytes>
         <size_compressed>30903</size_compressed>
-        <state/>
+        <state>available</state>
         <sys_created_by>admin-eduque</sys_created_by>
         <sys_created_on>2018-10-24 21:43:12</sys_created_on>
         <sys_id>2e1a49aa4fd56f400d952b8ca310c704</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin-eduque</sys_updated_by>
-        <sys_updated_on>2018-10-24 21:43:12</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2020-08-24 18:53:49</sys_updated_on>
         <table_name>ZZ_YYdb_image</table_name>
         <table_sys_id>00f901ea4fd56f400d952b8ca310c747</table_sys_id>
     </sys_attachment>

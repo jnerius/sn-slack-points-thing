@@ -46,7 +46,7 @@
         <update_guid_history>3282e057bcc12010094a97855651f83c:1981307441</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="1">c592689707c1201091a1f9fc7c1ed0fa</sys_audit_delete>
+        <sys_audit_delete display_value="">c592689707c1201091a1f9fc7c1ed0fa</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>MGOPW</sys_created_by>
         <sys_created_on>2020-12-18 01:14:53</sys_created_on>
