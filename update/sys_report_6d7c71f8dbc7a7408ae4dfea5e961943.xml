@@ -2,7 +2,9 @@
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
+        <aggregation_source/>
         <allow_data_label_overlap>false</allow_data_label_overlap>
+        <apply_alias>false</apply_alias>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -44,10 +46,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>reimbursement_requested</field>
         <field_list>number,short_description,state,reimbursement_amount,event,event.group</field_list>
-        <filter table="x_snc_dev_meet_reimbursement">event.dateONLast quarter@javascript:gs.beginningOfLastQuarter()@javascript:gs.endOfLastQuarter()^reimbursement_amount!=javascript:global.getCurrencyFilter('x_snc_dev_meet_reimbursement','reimbursement_amount', 'USD;0')^ORreimbursement_amount=NULL<item endquery="false" field="event.date" goto="false" newquery="false" operator="ON" or="false" value="Last quarter@javascript:gs.beginningOfLastQuarter()@javascript:gs.endOfLastQuarter()"/>
-            <item endquery="false" field="reimbursement_amount" goto="false" newquery="false" operator="!=" or="false" value="javascript:global.getCurrencyFilter('x_snc_dev_meet_reimbursement','reimbursement_amount', 'USD;0')"/>
-            <item endquery="false" field="reimbursement_amount" goto="false" newquery="false" operator="=" or="true" value="NULL"/>
-        </filter>
+        <filter table="x_snc_dev_meet_reimbursement">event.dateONLast quarter@javascript:gs.beginningOfLastQuarter()@javascript:gs.endOfLastQuarter()^reimbursement_amount!=javascript:global.getCurrencyFilter('x_snc_dev_meet_reimbursement','reimbursement_amount', 'USD;0')^ORreimbursement_amount=NULL</filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>

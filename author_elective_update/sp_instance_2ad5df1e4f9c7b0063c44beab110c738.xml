@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">5592a89707c1201091a1f9fc7c1ed006</sp_column>
+        <sp_widget display_value="Points Leaderboard Recent">65b55b1e4f9c7b0063c44beab110c79c</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin-eduque</sys_created_by>
+        <sys_created_on>2019-03-22 16:23:40</sys_created_on>
+        <sys_id>2ad5df1e4f9c7b0063c44beab110c738</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
+        <sys_update_name>sp_instance_2ad5df1e4f9c7b0063c44beab110c738</sys_update_name>
+        <sys_updated_by>MGOPW</sys_updated_by>
+        <sys_updated_on>2020-12-18 01:15:04</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=2ad5df1e4f9c7b0063c44beab110c738"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</application>
+        <file_path/>
+        <instance_id>4e45adb5dbedc410b847ac44d4961952</instance_id>
+        <instance_name>dev95798</instance_name>
+        <name>sp_instance_2ad5df1e4f9c7b0063c44beab110c738</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">5592a89707c1201091a1f9fc7c1ed006</sp_column><sp_widget display_value="Points Leaderboard Recent">65b55b1e4f9c7b0063c44beab110c79c</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin-eduque</sys_created_by><sys_created_on>2019-03-22 16:23:40</sys_created_on><sys_id>2ad5df1e4f9c7b0063c44beab110c738</sys_id><sys_mod_count>6</sys_mod_count><sys_name/><sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package><sys_policy/><sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope><sys_update_name>sp_instance_2ad5df1e4f9c7b0063c44beab110c738</sys_update_name><sys_updated_by>MGOPW</sys_updated_by><sys_updated_on>2020-12-18 01:15:04</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=2ad5df1e4f9c7b0063c44beab110c738"/></record_update>]]></payload>
+        <payload_hash>-1104476337</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>a275d45f0781201091a1f9fc7c1ed030</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>MGOPW</sys_created_by>
+        <sys_created_on>2020-12-18 01:15:04</sys_created_on>
+        <sys_id>7b92a89707c1201091a1f9fc7c1ed0f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176736a233b0000001</sys_recorded_at>
+        <sys_updated_by>MGOPW</sys_updated_by>
+        <sys_updated_on>2020-12-18 01:15:04</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>b392a897e4c12010a4ee0cbd2e4e43f3</update_guid>
+        <update_guid_history>b392a897e4c12010a4ee0cbd2e4e43f3:-1104476337,fb92a897e6c120106836267c21b0580f:-962196496,9292a89736c12010783c26c1ebce5b93:454478953,de92689768c120104e94270a4dc169b7:-962196496,e992e4974ac12010918ab7e695392a65:454478953,6992e49764c12010c595425746222f61:-962196496,dd45dc5fc4812010c6d1bdfec03e8724:-126506611</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">85a2e89707c1201091a1f9fc7c1ed040</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>MGOPW</sys_created_by>
+        <sys_created_on>2020-12-18 01:15:10</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>99c8a3b6d3b5448088b480e947164000</sys_id>
+        <sys_metadata>2ad5df1e4f9c7b0063c44beab110c738</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
+        <sys_scope_delete display_value="">131a8728698a46509850999a68198624</sys_scope_delete>
+        <sys_update_name>sp_instance_2ad5df1e4f9c7b0063c44beab110c738</sys_update_name>
+        <sys_update_version display_value="sp_instance_2ad5df1e4f9c7b0063c44beab110c738">7b92a89707c1201091a1f9fc7c1ed0f3</sys_update_version>
+        <sys_updated_by>MGOPW</sys_updated_by>
+        <sys_updated_on>2020-12-18 01:15:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

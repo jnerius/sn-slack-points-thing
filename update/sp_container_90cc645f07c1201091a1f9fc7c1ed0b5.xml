@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Points Leaderboard - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="points_leaderboard">94d71e554fcd63400d952b8ca310c799</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>MGOPW</sys_created_by>
+        <sys_created_on>2020-12-18 01:59:20</sys_created_on>
+        <sys_id>90cc645f07c1201091a1f9fc7c1ed0b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Points Leaderboard - Container 2</sys_name>
+        <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
+        <sys_update_name>sp_container_90cc645f07c1201091a1f9fc7c1ed0b5</sys_update_name>
+        <sys_updated_by>MGOPW</sys_updated_by>
+        <sys_updated_on>2020-12-18 01:59:20</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>
