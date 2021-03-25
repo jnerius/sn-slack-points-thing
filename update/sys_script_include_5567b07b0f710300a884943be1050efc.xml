@@ -20,67 +20,149 @@ Who has two thumbs and one more point? user does.&#13;
         <name>RandomMessage</name>
         <script><![CDATA[var RandomMessage = Class.create();
 RandomMessage.prototype = {
-	initialize: function() {
-	},
-	
-	getMessage : function(user, points, total, rank) {
-		var x = getRandomInt(0,5);
-		//var x = 1;
-		var bodyString = '';
-		switch (x) {
-			case 0: bodyString += 'Congrats ' + user + ' you now have ' + points + ' points';
-			//bodyString += '&text=' + gs.urlEncode('Congrats ' + thing + ' you now have ' + points + ' points');
-			break;
-			
-			case 1: bodyString += 'Good work ' + user + ' you now have ' + points + ' points';
-			break;
-			
-			case 2: bodyString += 'Good going ' + user + ' you now have ' + points + ' points';
-			break;
-			
-			case 3: bodyString += 'Way to help out ' + user + ' you now have ' + points + ' points';
-			break;
-				
-			case 4: bodyString += 'Give a hear-hear for ' + user + ' you now have ' + points + ' points';
-			break; 
-			
-			case 5: bodyString += 'Who has two thumbs and one more point? ' + user + ' does.  You now have ' + points + ' points';
-			break; 
-			
-				
-			
-		} // end switch
-		
-		bodyString += ' (' + total + ' total)';
-		var commendation = '';
-		if (rank == 1) commendation = ':first_place_medal:';
-		else if (rank == 2) commendation = ':second_place_medal:';
-		else if (rank == 3) commendation = ':third_place_medal:';
-		else if (rank >= 4 && rank <= 10) commendation = ':star:';
-		bodyString += ' ' + commendation;
-		return bodyString;
-		
-		function getRandomInt(min, max) {
-			return Math.floor(Math.random() * (max - min + 1)) + min;
-		}
-	},
-	
-	
-	
-	
-	type: 'RandomMessage'
+    initialize: function() {},
+
+    getMessage: function(user, points, total, rank) {
+        gs.info('\nuser: ' + user + '\npoints: ' + points + '\ntotal: ' + total + '\nrank: ' + rank);
+        var bodyString = '';
+        //Point total milestones
+        switch (total) {
+            case 1:
+                bodyString += 'Lets hear it for ' + user + ' for getting their first point!!';
+                break;
+
+            case 10:
+                bodyString += user + ' just got their :keycap_ten:th point!!';
+                break;
+
+            case 20:
+                bodyString += user + ' just hit the big :two::zero: points!!';
+                break;
+
+            case 30:
+                bodyString += user + ' just reached :three::zero: points!!';
+                break;
+
+            case 40:
+                bodyString += user + ' just reached :four::zero: points!!';
+                break;
+
+            case 42:
+                bodyString += user + "? There's a frood who really knows where his towel is, and also now has " + points + " points for 42 total (don't panic)";
+                break;
+
+            case 50:
+                bodyString += 'Congrats ' + user + ' you now have ' + points + ' points (50 total, :goldbar: is the traditional gift)';
+                break;
+
+            case 100:
+                bodyString += 'Big news! ' + user + ' has :100: points total!';
+                break;
+
+            case 200:
+            case 300:
+            case 400:
+            case 500:
+            case 600:
+            case 700:
+            case 800:
+            case 900:
+                bodyString += 'Big news! ' + user + ' just got their ' + total + 'th point!';
+                break;
+
+            case 111:
+                bodyString += user + ' just got their eleventy first point!';
+                break;
+
+            case 666:
+                bodyString += 'Let him who hath understanding reckon the number of the beast. ' + user + ' has scored a point, and its number is six hundred and sixty six (total) :the_horns:';
+                break;
+
+            case 1000:
+                bodyString += 'Not many have acsended to this lofy height, but ' + user + ' just scored :1000: total points!';
+                break;
+
+            case 2000:
+                bodyString += 'Bonkers! ' + user + ' just scored their ' + total + 'th point!';
+                break;
+
+            case 3000:
+                bodyString += 'Unbelievable! ' + user + ' just scored their ' + total + 'th point!';
+                break;
+
+            case 4000:
+                bodyString += 'Inconcieveable! ' + user + ' just scored their ' + total + 'th point!';
+                break;
+
+            default:
+                bodyString = randomMessage();
+        }
+
+
+        function randomMessage() {
+            var x = getRandomInt(0, 5);
+            //var x = 1;
+            switch (x) {
+                case 0:
+                    bodyString += 'Congrats ' + user + ' you now have ' + points + ' points';
+                    //bodyString += '&text=' + gs.urlEncode('Congrats ' + thing + ' you now have ' + points + ' points');
+                    break;
+
+                case 1:
+                    bodyString += 'Good work ' + user + ' you now have ' + points + ' points';
+                    break;
+
+                case 2:
+                    bodyString += 'Good going ' + user + ' you now have ' + points + ' points';
+                    break;
+
+                case 3:
+                    bodyString += 'Way to help out ' + user + ' you now have ' + points + ' points';
+                    break;
+
+                case 4:
+                    bodyString += 'Give a hear-hear for ' + user + ' you now have ' + points + ' points';
+                    break;
+
+                case 5:
+                    bodyString += 'Who has two thumbs and one more point? ' + user + ' does.  You now have ' + points + ' points';
+                    break;
+
+
+
+            } // end switch
+            return bodyString += ' (' + total + ' total)';
+        }
+
+        var commendation = '';
+        if (rank == 1) commendation = ':first_place_medal:';
+        else if (rank == 2) commendation = ':second_place_medal:';
+        else if (rank == 3) commendation = ':third_place_medal:';
+        else if (rank >= 4 && rank <= 10) commendation = ':star:';
+        bodyString += ' ' + commendation;
+        return bodyString;
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    },
+
+
+
+
+    type: 'RandomMessage'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>tgbates</sys_created_by>
         <sys_created_on>2017-10-20 21:56:07</sys_created_on>
         <sys_id>5567b07b0f710300a884943be1050efc</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>RandomMessage</sys_name>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_script_include_5567b07b0f710300a884943be1050efc</sys_update_name>
-        <sys_updated_by>admin-eduque</sys_updated_by>
-        <sys_updated_on>2019-03-21 18:04:39</sys_updated_on>
+        <sys_updated_by>eriemer</sys_updated_by>
+        <sys_updated_on>2021-01-24 22:21:36</sys_updated_on>
     </sys_script_include>
 </record_update>
