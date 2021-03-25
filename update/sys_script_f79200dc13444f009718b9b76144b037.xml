@@ -80,7 +80,7 @@
 
 			var count = new GlideAggregate('x_snc_slack_points_point');
 			count.addQuery('target', grSlackUser.getUniqueValue());
-			count.addEncodedQuery('sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()');
+			count.addEncodedQuery('sys_created_onONLast 90 days@javascript:gs.beginningOfLast90Days()@javascript:gs.endOfLast90Days()');
 			count.addAggregate('COUNT');
 			count.query();
 			var score = 0;
@@ -89,7 +89,7 @@
 
 			var rank = '';
 			var leader = new GlideAggregate('x_snc_slack_points_point');
-			leader.addEncodedQuery('sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()');
+			leader.addEncodedQuery('sys_created_onONLast 90 days@javascript:gs.beginningOfLast90Days()@javascript:gs.endOfLast90Days()');
 			leader.orderByAggregate('COUNT', 'target');
 			leader.addAggregate('COUNT', 'target');
 			leader.query();
@@ -119,7 +119,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f79200dc13444f009718b9b76144b037</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>Process Points</sys_name>
         <sys_overrides/>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
@@ -127,7 +127,7 @@
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_script_f79200dc13444f009718b9b76144b037</sys_update_name>
         <sys_updated_by>earl.duque</sys_updated_by>
-        <sys_updated_on>2020-11-18 01:11:25</sys_updated_on>
+        <sys_updated_on>2021-03-25 21:16:11</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>

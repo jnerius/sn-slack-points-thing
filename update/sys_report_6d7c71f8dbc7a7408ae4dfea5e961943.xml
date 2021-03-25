@@ -31,7 +31,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="">18ca95f3dbe02700b3b8f3c61d961997</created_by_user>
+        <created_by_user display_value="Andrew Barnes - admin">18ca95f3dbe02700b3b8f3c61d961997</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config/>
@@ -46,7 +46,10 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>reimbursement_requested</field>
         <field_list>number,short_description,state,reimbursement_amount,event,event.group</field_list>
-        <filter table="x_snc_dev_meet_reimbursement">event.dateONLast quarter@javascript:gs.beginningOfLastQuarter()@javascript:gs.endOfLastQuarter()^reimbursement_amount!=javascript:global.getCurrencyFilter('x_snc_dev_meet_reimbursement','reimbursement_amount', 'USD;0')^ORreimbursement_amount=NULL</filter>
+        <filter table="x_snc_dev_meet_reimbursement">event.dateONLast quarter@javascript:gs.beginningOfLastQuarter()@javascript:gs.endOfLastQuarter()^reimbursement_amount!=javascript:global.getCurrencyFilter('x_snc_dev_meet_reimbursement','reimbursement_amount', 'USD;0')^ORreimbursement_amount=NULL<item endquery="false" field="event.date" goto="false" newquery="false" operator="ON" or="false" value="Last quarter@javascript:gs.beginningOfLastQuarter()@javascript:gs.endOfLastQuarter()"/>
+            <item endquery="false" field="reimbursement_amount" goto="false" newquery="false" operator="!=" or="false" value="javascript:global.getCurrencyFilter('x_snc_dev_meet_reimbursement','reimbursement_amount', 'USD;0')"/>
+            <item endquery="false" field="reimbursement_amount" goto="false" newquery="false" operator="=" or="true" value="NULL"/>
+        </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
